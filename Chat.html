@@ -1,0 +1,27 @@
+<head>
+  <title>Chat</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Iranian Gay Chat</h1>
+    </header>
+
+    <textarea cols="150" rows="35">
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </textarea>
+  </div>
+  <footer>
+    <form class="new_message">
+      <input type="text" name="text" placeholder="Type your fucking message" size="150">
+    </form>
+  </footer>
+</body>
+
+<template name="message">
+  {{text}}
+</template>
+
