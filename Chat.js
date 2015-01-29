@@ -10,7 +10,7 @@ if (Meteor.isClient) {
 
       if (text != "") {
         Messages.insert({
-          name: name, text: text, time: Date.now(),
+          name: name, text: text, time: new Date(),
         });
 
       event.target.text.value = "";
@@ -25,7 +25,6 @@ if (Meteor.isClient) {
       return Messages.find({});
     }
   });
-   
 }
 
 if (Meteor.isServer) {
