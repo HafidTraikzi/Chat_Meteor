@@ -4,8 +4,8 @@ if (Meteor.isClient) {
   
   Template.body.events({
     "submit .new_message": function (event) {
-      // This function is called when the new task form is submitted
-      var name = 'Anonymous';
+
+      var name = "Anonymous";
       var text = event.target.text.value;
 
       if (text != "") {
@@ -13,10 +13,8 @@ if (Meteor.isClient) {
           name: name, text: text, time: Date.now(),
         });
 
-      // Clear form
       event.target.text.value = "";
 
-      // Prevent default form submit
       return false;
       }
 	  }
@@ -24,9 +22,7 @@ if (Meteor.isClient) {
 
   Template.body.helpers({
     messages: function () {
-    // Show newest tasks first
       return Messages.find({});
-
     }
   });
    
@@ -34,7 +30,7 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
-    // code to run on server at startup
+    
   });
 }
 
