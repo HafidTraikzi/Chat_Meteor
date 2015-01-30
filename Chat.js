@@ -7,6 +7,7 @@ if (Meteor.isClient) {
       
       var name = document.getElementById("pseudo");
       var text = event.target.text.value;
+      var scroll_down = document.getElementById("scroll");
 
       if (text != "") {
         Messages.insert({
@@ -15,6 +16,7 @@ if (Meteor.isClient) {
         
       event.preventDefault();
       event.target.text.value = "";
+      scroll_down.scrollTop = scroll_down.scrollHeight;
 
       return false;
       }
