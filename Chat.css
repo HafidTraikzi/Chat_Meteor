@@ -1,3 +1,5 @@
 h1 {color:pink;}
 
-textarea {resize:none}  
+textarea {resize:none;}
+
+.button {display:none;}
