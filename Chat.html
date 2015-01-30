@@ -8,7 +8,7 @@
       <h1>Iranian Gay Chat</h1>
     </header>
 
-    <textarea cols="150" rows="35">
+    <textarea cols="150" rows="35" readonly="true">
       {{#each messages}}
         {{> message}}
       {{/each}}
@@ -16,12 +16,14 @@
   </div>
   <footer>
     <form class="new_message">
-      <input type="text" name="text" placeholder="Type your fucking message" size="198">
+      <input type="text" id="pseudo" placeholder="Your pseudo" size="20">
+      <input type="text" id="text" class="textfield" placeholder="Your fucking message" size="172">
+      <input class="button" type="submit" value="send">
     </form>
   </footer>
 </body>
 
 <template name="message">
-  {{name}}: {{text}} {{time}}
+  {{name}}: {{text}} - {{time}}
 </template>
 
