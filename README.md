@@ -1,6 +1,6 @@
 ## Iranian Gay Chat
 
-Chat basique. Il manque encore beaucoup de fonctionalité.
+Chat basique. Il manque encore beaucoup de fonctionnalité.
 
 ## Installation
 
@@ -16,6 +16,6 @@ curl https://install.meteor.com/ | sh
 git clone https://github.com/HafidTraikzi/Iranian_Gay_Chat_Meteor.git
 ```
 
-Puis allez dans le repertoire Iranian_Gay_Chat_Meteor via le Terminal et lancez la commande ```bash meteor ``` pour lancer le serveur.
+Puis allez dans le repertoire Iranian_Gay_Chat_Meteor via le Terminal et lancez la commande ``` meteor ``` pour lancer le serveur.
 
 Ouvrez votre navigateur et tapez localhost:3000 dans la barre url.
