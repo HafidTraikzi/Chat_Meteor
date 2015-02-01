@@ -10,10 +10,16 @@ if (Meteor.isClient) {
       var scroll_down = document.getElementById("scroll");
 
       if (text != "") {
-        Messages.insert({
-          name: name.value, text: text, time: new Date(),
-        });      
-        
+        if (name.value == "") {
+          Messages.insert({
+            name: "Anonymous", text: text, time: new Date(),
+          }); 
+        } else {
+            Messages.insert({
+              name: name.value, text: text, time: new Date(),
+            });
+          }
+      
       event.preventDefault();
       event.target.text.value = "";
       scroll_down.scrollTop = scroll_down.scrollHeight;
