@@ -1,6 +1,6 @@
 ## Iranian Gay Chat
 
-Chat basique. Il manque encore beaucoup de fonctionnalité.
+Chat basique (pour le moment) pour la communauté gay iranienne. En fait, pour toutes les communautés gays qui ont besoin de se cacher ou pour tout individu soucieux de communiquer en privé sans laisser de traces. (Il manque encore beaucoup de fonctionnalité.)
 
 ## Installation
 
