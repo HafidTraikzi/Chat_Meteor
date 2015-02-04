@@ -1,14 +1,18 @@
 Messages = new Mongo.Collection("messages");
 
 if (Meteor.isClient) {
+
+  Accounts.ui.config({
+   passwordSignupFields: "USERNAME_ONLY"
+  });
   
   Template.body.events({
     "submit .new_message": function (event) {
       
-      var name = document.getElementById("pseudo");
+      var name = Meteor.user().username;
       var text = event.target.text.value;
       var scroll_down = document.getElementById("scroll");
-
+      
       if (text != "") {
         if (name.value == "") {
           Messages.insert({
@@ -16,13 +20,14 @@ if (Meteor.isClient) {
           }); 
         } else {
             Messages.insert({
-              name: name.value, text: text, time: new Date(),
+              name: name, text: text, time: new Date(),
             });
           }
       
       event.preventDefault();
       event.target.text.value = "";
       scroll_down.scrollTop = scroll_down.scrollHeight;
+      db.meteor_accounts_loginServiceConfiguration.find();
 
       return false;
       }
@@ -34,6 +39,7 @@ if (Meteor.isClient) {
       return Messages.find({});
     }
   });
+  
 }
 
 if (Meteor.isServer) {
