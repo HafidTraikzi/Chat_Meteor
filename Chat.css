@@ -14,4 +14,6 @@ button {padding:0.5em;}
 
 .button {display:none;}
 
+li {display:block;}
+
 .user {width:16%; height:524px; margin-bottom:0.5em; background-color:#F0F0F0; border:0.1em solid; float:left;}
