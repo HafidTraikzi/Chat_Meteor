@@ -19,7 +19,7 @@
     </textarea>
     <div class="user">
       <ul>
-        <li></li>
+        <li>{{> user}}</li>
       </ul>
     </div>
   </div>
@@ -40,5 +40,11 @@
     <input type="text" id="username" placeholder="Username">
     <button type="submit">Login</button>
   </form>
+</template>
+
+<template name="user">
+  {{#each users}}
+    {{username}}
+  {{/each}}
 </template>
 
