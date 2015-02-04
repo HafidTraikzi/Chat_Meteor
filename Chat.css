@@ -1,11 +1,17 @@
 h1 {color:pink;}
 
-.login {float:right; margin-right:10em;}
+.login {float:right; margin-right:5em;}
 
-textarea {resize:none; float:left; margin-bottom:0.5em;}
+textarea {resize:none; height:39em; width:75.5em; float:left; margin-bottom:0.5em;}
 
 .new_message {float:left;}
 
+#text {height:2em;}
+
+#username {height:2em;}
+
+button {padding:0.5em;}
+
 .button {display:none;}
 
-.user {width:16%; height:529px; margin-bottom:0.5em; background-color:#F0F0F0; border:0.1em solid; float:left;}
+.user {width:16%; height:524px; margin-bottom:0.5em; background-color:#F0F0F0; border:0.1em solid; float:left;}
