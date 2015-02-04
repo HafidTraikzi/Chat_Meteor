@@ -40,6 +40,12 @@ if (Meteor.isClient) {
     }
   });
   
+  Template.user.helpers({
+	  users: function() {
+		  return Meteor.users.find({}, {sort: {username: 1}});
+	  }
+  });
+  
 }
 
 if (Meteor.isServer) {
