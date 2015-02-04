@@ -1,5 +1,11 @@
 h1 {color:pink;}
 
-textarea {resize:none;}
+.login {float:right; margin-right:10em;}
+
+textarea {resize:none; float:left; margin-bottom:0.5em;}
+
+.new_message {float:left;}
 
 .button {display:none;}
+
+.user {width:16%; height:529px; margin-bottom:0.5em; background-color:#F0F0F0; border:0.1em solid; float:left;}
