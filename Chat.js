@@ -46,6 +46,10 @@ if (Meteor.isClient) {
 	  }
   });
   
+  Template.registerHelper("logged", function(userId) {
+	  return Meteor.userId() != null;
+  });
+  
 }
 
 if (Meteor.isServer) {
