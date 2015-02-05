@@ -27,7 +27,6 @@ if (Meteor.isClient) {
       event.preventDefault();
       event.target.text.value = "";
       scroll_down.scrollTop = scroll_down.scrollHeight;
-      db.meteor_accounts_loginServiceConfiguration.find();
 
       return false;
       }
@@ -40,14 +39,8 @@ if (Meteor.isClient) {
     }
   });
   
-  Template.user.helpers({
-	  users: function() {
-		  return Meteor.users.find({}, {sort: {username: 1}});
-	  }
-  });
-  
-  Template.registerHelper("logged", function(userId) {
-	  return Meteor.userId() != null;
+  Template.registerHelper("username", function() {
+	  return (Meteor.user() && Meteor.user().statusDefault) || Meteor.user().username;
   });
   
 }
