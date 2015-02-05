@@ -7,7 +7,6 @@
     <header>
       <div class="login">
         <button>{{> loginButtons align="right"}}</button>
-        {{> login}}
       </div>
       <h1>Iranian Gay Chat</h1>   
     </header>
@@ -17,15 +16,13 @@
         {{> message}}
       {{/each}}
     </textarea>
-    <div class="user">
-      <ul>
-        <li>{{#if logged}} {{> user}} {{/if}}</li>
-      </ul>
-    </div>
+    <textarea class="userbox">
+      {{> user}} 
+    </textarea>
   </div>
   <footer>
     <form class="new_message">
-      <input type="text" id="text" class="textfield" placeholder="Your fucking message" size="198">
+      <input type="text" id="text" class="textfield" placeholder="Your fucking message" size="199">
       <input class="button" type="submit" value="send">
     </form>
   </footer>
@@ -43,8 +40,6 @@
 </template>
 
 <template name="user">
-  {{#each users}}
-    {{username}}
-  {{/each}}
+  {{username}}
 </template>
 
