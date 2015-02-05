@@ -4,11 +4,10 @@ Chat basique (pour le moment) pour la communauté gay iranienne. En fait, pour t
 
 Fonctionnalité manquante :
 
-- Présence utilisateur
-- Problème : Warning pour Sign in sous Firefox OS
 - Emoticons
 - Chatroom Privée
-- Message à durée limité (1min) dans la chatroom privée. 
+- Message à durée limité (1min) dans la chatroom privée.
+- Problème à débugger: Warning pour Sign in sous Firefox OS 
 
 ## Installation
 
