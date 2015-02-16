@@ -4,11 +4,18 @@
 
 <body>
   <div class="container">
+<<<<<<< HEAD
     <header> 
       <div class="login">
         <button>{{> loginButtons align="right"}}</button>
       </div>
       <div class="online">{{#if currentUser}}{{online}}{{/if}}</div>
+=======
+    <header>
+      <div class="login">
+        <button>{{> loginButtons align="right"}}</button>
+      </div>
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
       <h1>Iranian Gay Chat</h1>   
     </header>
 
@@ -17,13 +24,21 @@
         {{> message}}
       {{/each}}
     </textarea>
+<<<<<<< HEAD
     <textarea class="userbox" readonly="true">
+=======
+    <textarea class="userbox">
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
       {{> user}} 
     </textarea>
   </div>
   <footer>
     <form class="new_message">
+<<<<<<< HEAD
       <input type="text" id="text" class="textfield" placeholder="Your fucking message" size="158">
+=======
+      <input type="text" id="text" class="textfield" placeholder="Your fucking message" size="199">
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
       <input class="button" type="submit" value="send">
     </form>
   </footer>
@@ -33,11 +48,23 @@
   {{name}}: {{text}} - {{time}}
 </template>
 
+<<<<<<< HEAD
 <template name="user"> 
   {{#if currentUser}}
     {{#each users}}
       {{username}}
     {{/each}} 
   {{/if}} 
+=======
+<template name="login">
+  <form class="new_message">
+    <input type="text" id="username" placeholder="Username">
+    <button type="submit">Login</button>
+  </form>
+</template>
+
+<template name="user">
+  {{username}}
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
 </template>
 

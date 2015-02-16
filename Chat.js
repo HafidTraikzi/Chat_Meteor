@@ -7,16 +7,32 @@ if (Meteor.isClient) {
   });
   
   Template.body.events({
+<<<<<<< HEAD
     "submit .new_message": function(event) {
+=======
+    "submit .new_message": function (event) {
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
       
       var name = Meteor.user().username;
       var text = event.target.text.value;
       var scroll_down = document.getElementById("scroll");
       
       if (text != "") {
+<<<<<<< HEAD
         Messages.insert({
           name: name, text: text, time: new Date(),
         });
+=======
+        if (name.value == "") {
+          Messages.insert({
+            name: "Anonymous", text: text, time: new Date(),
+          }); 
+        } else {
+            Messages.insert({
+              name: name, text: text, time: new Date(),
+            });
+          }
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
       
       event.preventDefault();
       event.target.text.value = "";
@@ -28,11 +44,16 @@ if (Meteor.isClient) {
 	});
 
   Template.body.helpers({
+<<<<<<< HEAD
     messages: function() {
+=======
+    messages: function () {
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
       return Messages.find({});
     }
   });
   
+<<<<<<< HEAD
   Template.user.helpers({
 	  users: function() {
 		  return Meteor.users.find({}, {sort: {username: 1}});
@@ -48,11 +69,16 @@ if (Meteor.isClient) {
   
   Template.registerHelper("online", function() {
 	  return "online";
+=======
+  Template.registerHelper("username", function() {
+	  return (Meteor.user() && Meteor.user().statusDefault) || Meteor.user().username;
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
   });
   
 }
 
 if (Meteor.isServer) {
+<<<<<<< HEAD
   Meteor.startup(function() {
     Meteor.publish('userPresence', function() {
   // Example of using a filter to publish only "online" users:
@@ -61,3 +87,11 @@ if (Meteor.isServer) {
 });
   });
 }
+=======
+  Meteor.startup(function () {
+    
+  });
+}
+
+
+>>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
