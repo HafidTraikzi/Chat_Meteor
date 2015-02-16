@@ -1,0 +1,19 @@
+h1 {color:pink;}
+
+.login {float:right; margin-right:5em;}
+
+.online {color:pink; font-size:2em; float:right; margin-right:1em;}
+
+textarea {resize:none; height:39em; width:55.5em; float:left; margin-bottom:0.5em;}
+
+.new_message {float:left;}
+
+#text {height:2em;}
+
+#username {height:2em;}
+
+button {padding:0.5em;}
+
+.button {display:none;}
+
+.userbox {width:16%; height:497px; padding:1em; margin-bottom:0.5em; background-color:#F0F0F0; border:0.1em solid; float:left;}

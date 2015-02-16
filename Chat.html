@@ -1,0 +1,43 @@
+<head>
+  <title>Iranian Gay Chat</title>
+</head>
+
+<body>
+  <div class="container">
+    <header> 
+      <div class="login">
+        <button>{{> loginButtons align="right"}}</button>
+      </div>
+      <div class="online">{{#if currentUser}}{{online}}{{/if}}</div>
+      <h1>Iranian Gay Chat</h1>   
+    </header>
+
+    <textarea id="scroll" readonly="true">
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </textarea>
+    <textarea class="userbox" readonly="true">
+      {{> user}} 
+    </textarea>
+  </div>
+  <footer>
+    <form class="new_message">
+      <input type="text" id="text" class="textfield" placeholder="Your fucking message" size="158">
+      <input class="button" type="submit" value="send">
+    </form>
+  </footer>
+</body>
+
+<template name="message">
+  {{name}}: {{text}} - {{time}}
+</template>
+
+<template name="user"> 
+  {{#if currentUser}}
+    {{#each users}}
+      {{username}}
+    {{/each}} 
+  {{/if}} 
+</template>
+
