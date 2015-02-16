@@ -4,6 +4,7 @@ Chat basique (pour le moment) pour la communauté gay iranienne. En fait, pour t
 
 Fonctionnalité manquante :
 
+- Présence Utilisateur
 - Emoticons
 - Chatroom Privée
 - Message à durée limité (1min) dans la chatroom privée.
