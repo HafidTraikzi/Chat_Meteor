@@ -2,13 +2,9 @@ h1 {color:pink;}
 
 .login {float:right; margin-right:5em;}
 
-<<<<<<< HEAD
 .online {color:pink; font-size:2em; float:right; margin-right:1em;}
 
 textarea {resize:none; height:39em; width:55.5em; float:left; margin-bottom:0.5em;}
-=======
-textarea {resize:none; height:39em; width:75.5em; float:left; margin-bottom:0.5em;}
->>>>>>> 4c58b8f80f762ada3aa3e4b965d9253b419f48bf
 
 .new_message {float:left;}
 
